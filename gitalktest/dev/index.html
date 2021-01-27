@@ -18,6 +18,18 @@
   </head>
   <body>
     <div id="gitalk-container"></div>
+    <script>
+      var gitalk = new Gitalk({
+        clientID: '91931d9090e2710dfe33',
+        clientSecret: '42a65f4ce3f11d53b8d82298b1df3ef357ea4467',
+        repo: 'gittalk',
+        owner: 'AlanLuCN',
+        admin: ['AlanLuCN'],
+        perPage: 50,
+        id: decodeURI(window.location.pathname)
+      })
+      gitalk.render('gitalk-container')
+    </script>
     <script src="/dist/gitalk.js"></script>
     <script src="./config.js"></script>
     <script src="./index.js"></script>
