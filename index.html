@@ -46,12 +46,12 @@
 			<script>
 				var gitalk = new Gitalk({
 					clientID: '91931d9090e2710dfe33',
-						clientSecret: '42a65f4ce3f11d53b8d82298b1df3ef357ea4467',
-					repo: 'Notes',
+					clientSecret: '42a65f4ce3f11d53b8d82298b1df3ef357ea4467',
+					repo: 'https://alanlucn.github.io',
 					owner: 'AlanLuCN',
 					admin: ['AlanLuCN'],
-					labels: ['gitment'],
 					perPage: 50,
+					id: decodeURI(window.location.pathname)
 				})
 				gitalk.render('gitalk-container')
 			</script>
