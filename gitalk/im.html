@@ -6,18 +6,18 @@
 <title>重生酱的小窝 | 实时聊天室</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
 <meta name="description" content="这里是OIer们的欢乐聊天室，完全由lym本人开发。">
-<link rel="canonical" href="https://wiyi.org/gitalk-anonymous-comment.html"><link rel="alternate" type="application/rss+xml" title="Bigbyto" href="https://wiyi.org/feed.xml">
 <!-- begin favicon --><link rel="apple-touch-icon" sizes="180x180" href="https://wiyi.org/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://wiyi.org/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://wiyi.org/assets/favicon-16x16.png"><link rel="manifest" href="https://wiyi.org/assets/site.webmanifest"><link rel="mask-icon" href="https://wiyi.org/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="https://wiyi.org/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
 <meta name="theme-color" content="#ffffff">
-<!-- end favicon --><link rel="stylesheet" href="./zhen_files/main.css"><link rel="stylesheet" href="./zhen_files/all.min.css"><style>
+<style>
 	textarea {
 		-webkit-appearance: none;
 	}
 </style>
-</script><script>(function() {
+</script>
+<script>(function() {
   window.isArray = function(val) {
     return Object.prototype.toString.call(val) === '[object Array]';
   };
@@ -244,7 +244,7 @@
         }
       },
       paths: {
-        search_js: '/assets/search.js'
+        search_js: 'https://alanlucn.github.io/js/search.js'
       }
     };
     window.TEXT_VARIABLES = TEXT_VARIABLES;
@@ -264,7 +264,8 @@
     <div></div><div class="page__content"><div class="main">
 
           <div class="col-main"><article itemscope="" itemtype="http://schema.org/Article">
-<div class="js-article-content"><section class="page__comments"><div id="js-gitalk-container"><div class="gt-container"><div class="gt-meta"><script>
+<div class="js-article-content"><section class="page__comments">
+	<div id="js-gitalk-container"><div class="gt-container"><div class="gt-meta"><script>
 		window.Lazyload.css('https://bigbyto.gitee.io/assets/js/gitalk/v1.6.8/gitalk.css');
 		window.Lazyload.js('https://bigbyto.gitee.io/assets/js/gitalk/v1.6.8/gitalk.min.js', function() {
 			var gitalk = new Gitalk({
@@ -273,7 +274,7 @@
 				repo: 'gittalk',
 				owner: 'AlanLuCN',
 				admin: ['AlanLuCN'],
-				id: 'im',
+				id: 'im', //id, 显示仓库的名字(只有在第一次起作用、id相同的内容也相同)
 				perPage: 20,
 				proxy: 'https://github-api.wiyi.org',
 				server: {
@@ -300,8 +301,8 @@
 			});
 			gitalk.render('js-gitalk-container');
 		});
-	</script></article></div><a class="gt-avatar-github">
-          </a></div></div></div><a class="gt-avatar-github">
+	</script></article></div>
+	<a class="gt-avatar-github"></a></div></div></div><a class="gt-avatar-github">
     </a></div><a class="gt-avatar-github">
   </a></div><a class="gt-avatar-github">
 </a></div><a class="gt-avatar-github">
