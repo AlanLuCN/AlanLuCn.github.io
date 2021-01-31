@@ -161,11 +161,11 @@
 						var snackHeadX = that.snack.body[0].x;
 						var snackHeadY = that.snack.body[0].y;
 						if(snackHeadX < 0 || snackHeadX >= maxX){
-							alert("游戏结束");
+							alert("Game Over! 蛇撞墙了");
 							clearInterval(timeId);
 						}
 						if(snackHeadY < 0 || snackHeadY >= maxY){
-							alert("游戏结束");
+							alert("Game Over! 蛇撞墙了");
 							clearInterval(timeId);
 						}
 					},250)
